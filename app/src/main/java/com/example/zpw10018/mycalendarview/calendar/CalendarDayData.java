@@ -1,9 +1,9 @@
-package com.example.zpw10018.mycalendarview.calendar.mode;
+package com.example.zpw10018.mycalendarview.calendar;
 
 
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 
-import com.example.zpw10018.mycalendarview.calendar.CalendarUtils;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -33,6 +33,24 @@ public class CalendarDayData {
         return date;
     }
 
+    public static CalendarDayData from(@Nullable Calendar calendar) {
+        if (calendar == null) {
+            return null;
+        }
+        return from(
+                CalendarUtils.getYear(calendar),
+                CalendarUtils.getMonth(calendar),
+                CalendarUtils.getDay(calendar)
+        );
+    }
+
+    public static CalendarDayData from(@Nullable Date date) {
+        if (date == null) {
+            return null;
+        }
+        return from(CalendarUtils.getInstance(date));
+    }
+
     public Calendar getCalendar() {
         if (calendar == null) {
             calendar = CalendarUtils.getInstance();
@@ -41,9 +59,18 @@ public class CalendarDayData {
         return calendar;
     }
 
+    public boolean isInRange(@Nullable CalendarDayData minDate, @Nullable CalendarDayData maxDate) {
+        return !(minDate != null && minDate.isAfter(this)) &&
+                !(maxDate != null && maxDate.isBefore(this));
+    }
+
     public void copyTo(@NonNull Calendar calendar) {
         calendar.clear();
         calendar.set(year, month, day);
+    }
+
+    public static CalendarDayData today() {
+        return from(CalendarUtils.getInstance());
     }
 
     public static CalendarDayData from(int year, int month, int day) {
@@ -79,7 +106,6 @@ public class CalendarDayData {
         }
     }
 
-
     public int getYear() {
         return year;
     }
@@ -91,4 +117,5 @@ public class CalendarDayData {
     public int getDay() {
         return day;
     }
+
 }

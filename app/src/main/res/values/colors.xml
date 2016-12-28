@@ -3,4 +3,5 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="main_line" >#ffe4e4e4</color><!-- 用于分割线、按钮描边 -->
 </resources>

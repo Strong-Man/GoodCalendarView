@@ -2,7 +2,8 @@ package com.example.zpw10018.mycalendarview.calendar.formatter;
 
 import android.support.annotation.NonNull;
 
-import com.example.zpw10018.mycalendarview.calendar.mode.CalendarDayData;
+
+import com.example.zpw10018.mycalendarview.calendar.CalendarDayData;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

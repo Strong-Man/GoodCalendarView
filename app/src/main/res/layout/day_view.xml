@@ -3,33 +3,72 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:id="@+id/ll_day_header"
+    <RelativeLayout
+        android:id="@+id/ll_decorate"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/tv_day_primary_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <ImageView
-            android:id="@+id/iv_day_icon"
-            android:layout_width="wrap_content"
+        <View
+            android:id="@+id/v_left_line"
+            android:layout_width="1dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp" />
+            android:layout_alignParentLeft="true"
+            android:background="@color/main_line" />
 
-    </LinearLayout>
+        <View
+            android:id="@+id/v_right_line"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/main_line" />
 
-    <TextView
-        android:id="@+id/tv_second_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <!--<View-->
+        <!--android:id="@+id/v_bottom_line"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/main_line"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"/>-->
 
-    <LinearLayout
-        android:id="@+id/ll_extend_info"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" />
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/v_right_line"
+            android:layout_toRightOf="@id/v_left_line"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_day_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_day_primary_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/iv_day_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_second_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/ll_extend_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+    </RelativeLayout>
 </merge>

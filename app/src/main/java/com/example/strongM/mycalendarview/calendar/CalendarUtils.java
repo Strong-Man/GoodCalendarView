@@ -1,4 +1,4 @@
-package com.example.zpw10018.mycalendarview.calendar;
+package com.example.strongM.mycalendarview.calendar;
 
 import android.support.annotation.Nullable;
 
@@ -10,9 +10,7 @@ import static java.util.Calendar.DAY_OF_WEEK;
 import static java.util.Calendar.MONTH;
 import static java.util.Calendar.YEAR;
 
-/**
- * Created by zpw10018 on 2016/12/20.
- */
+
 
 public class CalendarUtils {
 

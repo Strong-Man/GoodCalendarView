@@ -1,14 +1,10 @@
-package com.example.zpw10018.mycalendarview.calendar.formatter;
+package com.example.strongM.mycalendarview.calendar.formatter;
 
 
-import com.example.zpw10018.mycalendarview.calendar.CalendarUtils;
+import com.example.strongM.mycalendarview.calendar.CalendarUtils;
 
 import java.util.Calendar;
 import java.util.Locale;
-
-/**
- * Created by zpw10018 on 2016/12/20.
- */
 
 public class CalendarWeekDayFormatter implements WeekDayFormatter {
 

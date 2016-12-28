@@ -1,13 +1,9 @@
-package com.example.zpw10018.mycalendarview.calendar;
+package com.example.strongM.mycalendarview.calendar;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v4.util.SparseArrayCompat;
 
-
-/**
- * Created by zpw10018 on 2016/12/22.
- */
 
 public class MonthPagerAdapter extends CalendarPagerAdapter<MonthView> {
 

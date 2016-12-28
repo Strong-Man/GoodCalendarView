@@ -1,4 +1,4 @@
-package com.example.zpw10018.mycalendarview.calendar;
+package com.example.strongM.mycalendarview.calendar;
 
 
 import android.support.annotation.NonNull;
@@ -8,9 +8,6 @@ import android.support.annotation.Nullable;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- * Created by zpw10018 on 2016/12/20.
- */
 
 public class CalendarDayData {
     private final int year;

@@ -1,7 +1,6 @@
-package com.example.zpw10018.mycalendarview.calendar;
+package com.example.strongM.mycalendarview.calendar;
 
 import android.content.Context;
-import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -10,13 +9,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.zpw10018.mycalendarview.R;
-import com.example.zpw10018.mycalendarview.calendar.formatter.DateFormatDayFormatter;
-import com.example.zpw10018.mycalendarview.calendar.formatter.DayFormatter;
+import com.example.strongM.mycalendarview.R;
+import com.example.strongM.mycalendarview.calendar.formatter.DateFormatDayFormatter;
+import com.example.strongM.mycalendarview.calendar.formatter.DayFormatter;
 
-/**
- * Created by zpw10018 on 2016/12/20.
- */
 
 public class DayView extends LinearLayout {
     private LinearLayout mContentLayout;

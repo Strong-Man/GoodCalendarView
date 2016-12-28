@@ -1,4 +1,4 @@
-package com.example.zpw10018.mycalendarview.calendar;
+package com.example.strongM.mycalendarview.calendar;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
@@ -7,20 +7,17 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-import com.example.zpw10018.mycalendarview.calendar.formatter.CalendarWeekDayFormatter;
-import com.example.zpw10018.mycalendarview.calendar.formatter.DateFormatDayFormatter;
-import com.example.zpw10018.mycalendarview.calendar.formatter.DayFormatter;
-import com.example.zpw10018.mycalendarview.calendar.formatter.TitleFormatter;
-import com.example.zpw10018.mycalendarview.calendar.formatter.WeekDayFormatter;
+import com.example.strongM.mycalendarview.calendar.formatter.CalendarWeekDayFormatter;
+import com.example.strongM.mycalendarview.calendar.formatter.DateFormatDayFormatter;
+import com.example.strongM.mycalendarview.calendar.formatter.DayFormatter;
+import com.example.strongM.mycalendarview.calendar.formatter.TitleFormatter;
+import com.example.strongM.mycalendarview.calendar.formatter.WeekDayFormatter;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Created by zpw10018 on 2016/12/21.
- */
 
 abstract class CalendarPagerAdapter<V extends CalendarPagerView> extends PagerAdapter {
     protected ICalendarView calendarView;

@@ -1,4 +1,4 @@
-package com.example.zpw10018.mycalendarview.calendar;
+package com.example.strongM.mycalendarview.calendar;
 
 import android.content.Context;
 import android.widget.LinearLayout;
@@ -10,10 +10,6 @@ import java.util.Calendar;
 import java.util.Collection;
 
 import static java.util.Calendar.DATE;
-
-/**
- * Created by zpw10018 on 2016/12/22.
- */
 
 public class MonthView extends CalendarPagerView{
 

@@ -1,4 +1,4 @@
-package com.example.zpw10018.mycalendarview;
+package com.example.strongM.mycalendarview;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

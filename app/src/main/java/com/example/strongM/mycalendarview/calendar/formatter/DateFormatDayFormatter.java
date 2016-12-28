@@ -1,17 +1,14 @@
-package com.example.zpw10018.mycalendarview.calendar.formatter;
+package com.example.strongM.mycalendarview.calendar.formatter;
 
 import android.support.annotation.NonNull;
 
 
-import com.example.zpw10018.mycalendarview.calendar.CalendarDayData;
+import com.example.strongM.mycalendarview.calendar.CalendarDayData;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
-/**
- * Created by zpw10018 on 2016/12/20.
- */
 
 public class DateFormatDayFormatter implements DayFormatter {
     private final DateFormat dateFormat;

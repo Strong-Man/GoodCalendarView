@@ -1,4 +1,4 @@
-package com.example.zpw10018.mycalendarview.calendar;
+package com.example.strongM.mycalendarview.calendar;
 
 import android.content.Context;
 import android.support.v4.view.ViewPager;
@@ -6,9 +6,6 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
-/**
- * Created by zpw10018 on 2016/12/27.
- */
 
 public class VerticalViewPager extends ViewPager {
 

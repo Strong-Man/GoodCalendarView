@@ -1,4 +1,4 @@
-package com.example.zpw10018.mycalendarview.calendar;
+package com.example.strongM.mycalendarview.calendar;
 
 import android.content.Context;
 import android.util.Log;
@@ -7,19 +7,16 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 
-import com.example.zpw10018.mycalendarview.calendar.formatter.DayFormatter;
-import com.example.zpw10018.mycalendarview.calendar.formatter.WeekDayFormatter;
+import com.example.strongM.mycalendarview.calendar.formatter.DayFormatter;
+import com.example.strongM.mycalendarview.calendar.formatter.WeekDayFormatter;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collection;
-import java.util.List;
 
 import static java.util.Calendar.DATE;
 
-/**
- * Created by zpw10018 on 2016/12/21.
- */
+
 
 public abstract class CalendarPagerView extends ViewGroup {
     protected static final int DEFAULT_DAYS_IN_WEEK = 7;

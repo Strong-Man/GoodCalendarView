@@ -1,16 +1,12 @@
-package com.example.zpw10018.mycalendarview.calendar;
+package com.example.strongM.mycalendarview.calendar;
 
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import com.example.zpw10018.mycalendarview.R;
+import com.example.strongM.mycalendarview.R;
 
-
-/**
- * Created by zpw10018 on 2016/12/22.
- */
 
 public class RowView extends LinearLayout {
     private static final int COLUMN = 7;
